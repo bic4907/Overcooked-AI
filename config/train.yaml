@@ -1,0 +1,40 @@
+defaults:
+    - agent: maddpg
+
+# Experiment Settings
+env: asymmetric_advantages
+episode_length: 500
+discrete_action_space: true
+
+experiment: vanilla
+seed: 0
+num_seed_steps: 10000
+
+num_train_steps: 1e6
+replay_buffer_capacity: 5e4
+
+eval_frequency: 10000
+num_eval_episodes: 3
+
+common_reward: true
+
+ou_exploration_steps: ${num_train_steps}
+ou_init_scale: 0.3
+ou_final_scale: 0
+
+device: cuda
+
+# Logging Settings
+log_frequency: 5000
+log_save_tb: true
+save_video: true
+render: false
+
+# Save Buffer
+save_model: false
+save_replay_buffer: false
+
+# hydra configuration
+hydra:
+    run:
+        dir: ./experiment/${now:%Y.%m.%d}/${now:%H%M}_${agent.name}_${experiment}

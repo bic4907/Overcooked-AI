@@ -1,0 +1,31 @@
+defaults:
+    - agent: bc
+    - data: local
+
+# Experiment Settings
+env: asymmetric_advantages
+episode_length: 500
+discrete_action_space: true
+
+experiment: vanilla
+seed: 0
+
+num_train_steps: 40000
+
+eval_frequency: 1000
+num_eval_episodes: 3
+
+common_reward: true
+
+device: cuda
+
+# Logging Settings
+log_frequency: 5000
+log_save_tb: true
+save_video: true
+
+
+# hydra configuration
+hydra:
+    run:
+        dir: ./experiment/${now:%Y.%m.%d}/${now:%H%M}_${agent.name}_orl-${experiment}

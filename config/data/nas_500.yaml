@@ -1,0 +1,12 @@
+﻿data_dirs: [
+  '/mnt/nas/inchang/Overcooked-AI/49999',
+  '/mnt/nas/inchang/Overcooked-AI/99999',
+  '/mnt/nas/inchang/Overcooked-AI/149999',
+  '/mnt/nas/inchang/Overcooked-AI/199999',
+  '/mnt/nas/inchang/Overcooked-AI/249999',
+  '/mnt/nas/inchang/Overcooked-AI/299999',
+  '/mnt/nas/inchang/Overcooked-AI/349999',
+  '/mnt/nas/inchang/Overcooked-AI/399999',
+  '/mnt/nas/inchang/Overcooked-AI/449999',
+  '/mnt/nas/inchang/Overcooked-AI/499999',
+]

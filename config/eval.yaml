@@ -1,0 +1,20 @@
+defaults:
+    - agent: sac
+
+map: Offroad_1
+
+experiment: eval
+
+num_train_steps: 1e6
+replay_buffer_capacity: ${num_train_steps}
+
+
+eval_frequency: 10000
+num_eval_episodes: 5
+
+device: cuda
+
+log_frequency: 10000
+log_save_tb: true
+
+save_video: true

@@ -1,0 +1,17 @@
+name: rem_maddpg
+_target_: model.rem_maddpg.MADDPG
+params:
+  obs_dim: ??? # to be specified later
+  action_dim: ??? # to be specified later
+  action_range: ??? # to be specified later
+  agent_index: ??? # Different by environments
+  hidden_dim: 64
+  device: ${device}
+  discrete_action_space: ${discrete_action_space}
+  batch_size: 256
+  lr: 0.001
+  tau: 0.01
+  gamma: 0.95
+
+  critic:
+    input_dim: ???

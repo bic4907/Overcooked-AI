@@ -1,0 +1,15 @@
+{
+    "grid":  """XXPXXXX
+                O   2 S
+                XXPDXXX
+                O   1 S
+                XXXXXXX""",
+    "start_all_orders" : [
+        { "ingredients" : ["onion", "onion", "onion"]}
+    ],
+    "onion_value" : 21,
+    "tomato_value" : 13,
+    "onion_time" : 15,
+    "tomato_time" : 7,
+    "rew_shaping_params": {"PLACEMENT_IN_POT_REW": 3, "DISH_PICKUP_REWARD": 3, "SOUP_PICKUP_REWARD": 5, "DISH_DISP_DISTANCE_REW": 0, "POT_DISTANCE_REW": 0, "SOUP_DISTANCE_REW": 0}
+}
